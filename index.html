@@ -125,16 +125,25 @@
         margin: 0.75rem auto;
         max-width: 90%;
         text-align: center;
-        left: auto;    /* ← THIS is the missing piece */
+        left: auto;
         right: auto;
       }
-        
-    .center-left {
-        display: none;   /* hide “Food & Drink” on phones */
-    }
+
+      .top-left {
+        margin-top: -0.5rem; /* move up */
+      }
+
+      .bottom-left,
+      .bottom-right {
+        margin-top: 1.25rem; /* move down */
+      }
+
+      .center-left {
+        display: none;
+      }
 
       .bottom-right {
-        right: auto;          /* cancel desktop positioning */
+        right: auto;
         left: auto;
       }
     }
