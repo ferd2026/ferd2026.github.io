@@ -122,9 +122,11 @@
 
       .overlay-text {
         position: relative;
-        margin: 0.75rem auto; /* auto centers the block */
+        margin: 0.75rem auto;
         max-width: 90%;
         text-align: center;
+        left: auto;    /* ← THIS is the missing piece */
+        right: auto;
       }
 
       .bottom-right {
