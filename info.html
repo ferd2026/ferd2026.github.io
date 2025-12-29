@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All The Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        /* Reset */
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            font-family: 'Fira Sans Condensed','Arial Rounded MT Bold',Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Page container */
+        .page {
+            max-width: 900px;
+            padding: 1rem;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        h2 {
+            font-weight: 400;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-top: 0.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .notice {
+            background: #f5f5f5;
+            padding: 0.75rem 1rem;
+            /*border-left: 4px solid #888;*/
+        }
+        
+        .notice {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .notice-icon {
+            font-size: 2rem;
+            line-height: 1;
+        }
+
+        .directions {
+            margin-top: 1rem;
+        }
+
+        .directions .indent {
+            margin-left: 1rem;
+        }
+
+        .parking-map {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin-top: 1rem;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+            }
+
+            .directions .indent {
+                margin-left: 0.5rem;
+            }
+        }
+        
+        /* Remove Chrome document focus highlight */
+        html:focus,
+        html:focus-visible,
+        body:focus,
+        body:focus-visible {
+            outline: none;
+        }
+
+        /* Remove Chrome tap/click highlight */
+        html, body {
+        -webkit-tap-highlight-color: transparent;
+        }
+        
+     /* Prevent selection on headings (removes blue flash there) */
+        h1, h2 {
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        /* Allow normal selection everywhere else */
+        p, a, strong, div {
+            user-select: text;
+            -webkit-user-select: text;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+
+        <h1>Ferd Leimkuhler Memorial Celebration</h1>
+
+        <h2>When</h2>
+        <p>Friday, June 12, 2026, Noon to 2pm</p>
+
+        <h2>Where</h2>
+        <p>The Brazilian Room in Tilden Park, on the eastern edge of Berkeley, California.</p>
+
+        <h2>Food &amp; Drink</h2>
+        <p>A light lunch will be served.</p>
+
+        <h2>RSVP</h2>
+        <p>Let us know who's coming by emailing <a href="mailto:natleim@gmail.com">natleim@gmail.com</a>.</p>
+
+        <h2>Driving Directions</h2>
+        <p>
+            The Brazilian Room is located in Tilden Regional Park
+            at the intersection of Wildcat Canyon and Shasta Roads.
+            <br>
+            <a target="_blank"
+               href="https://www.google.com/maps/place/Wildcat+Canyon+Rd+&+Shasta+Rd,+California+94708/@37.893007,-122.2453528,17z/data=!3m1!4b1!4m2!3m1!1s0x80857c0d76f52ce5:0x91526a48aaa23daa">
+                View on Google Maps
+            </a>
+        </p>
+        
+        <div class="notice">
+            <span class="notice-icon">&#9758;</span>
+            <span class="notice-text">
+                Note! There is little or no cellular reception at the Brazilian Room, so plan ahead!
+            </span>
+        </div>
+        
+        <div class="directions">
+            <p><strong>From Highway 80:</strong></p>
+            <div class="indent">
+                Take University Avenue exit in Berkeley<br>
+                Follow University until it ends at Oxford St.<br>
+                Left on Oxford to Rose St.<br>
+                Right on Rose one block to Spruce St.<br>
+                Left on Spruce and go about 1.5 miles to the stop sign at Grizzly Peak Blvd.<br>
+                Continue straight across Grizzly Peak Blvd. and Spruce becomes Wildcat Canyon Road<br>
+                Continue for two miles and the Brazilian Room will be on your left
+            </div>
+        </div>
+
+        <div class="directions">
+            <p><strong>From Highway 24 heading west:</strong></p>
+            <div class="indent">
+                Before Caldecott Tunnel, exit Fish Ranch Road and follow it up to the stop sign at Grizzly Peak Boulevard<br>
+                Turn right on Grizzly Peak and go around 2.5 miles to the stop sign at Golf Course Road<br>
+                Right on Golf Course Rd. and continue to the stop sign at Shasta Road<br>
+                Right on Shasta<br>
+                Shasta Road ends at Wildcat Canyon Rd. and the Brazilian Room parking lot
+            </div>
+        </div>
+
+        <h2>Parking</h2>
+        <p>
+            There is a parking area directly in front of the Brazilian Room.<br>
+            You can also park along Wildcat Canyon Rd.<br>
+            Parking is also allowed on the shoulder of Anza View Rd.
+        </p>
+
+        <img class="parking-map"
+             src="images/brazilian_room_parking.jpg"
+             alt="Brazilian Room parking map">
+ 
+        <h2>Questions</h2>
+        <p style="margin-bottom:4rem;">
+            If you have questions, please email
+            <a href="mailto:ferd2026@gmail.com">ferd2026@gmail.com</a>
+            <br><br><a href="index.html">&laquo; Back</a>
+
+    </div>
+</body>
+</html>

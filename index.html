@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ferd Leimkuhler Memorial Celebration</title>
+
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+
+  /* ===== Hero ===== */
+
+  .hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh; /* modern mobile-safe viewport */
+    background-image: url("images/ferdlookingout.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Fira Sans Condensed','Arial Rounded MT Bold',Arial, sans-serif;
+  }
+
+  /* ===== Overlay text ===== */
+
+  .overlay-text {
+    position: absolute;
+    color: yellow;
+    padding: 0.4em 0.6em;
+    max-width: 80%;
+  }
+
+  .top-left {
+    top: 2%;
+    left: 2%;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+  }
+
+  .smaller-text {
+    font-size: clamp(1.2rem, 3vw, 2.5rem);
+  }
+
+  .center-left {
+    top: 46%;
+    left: 2%;
+    font-size: clamp(1.6rem, 3.5vw, 3rem);
+  }
+
+  .bottom-left {
+    bottom: 4%;
+    left: 2%;
+    font-size: clamp(1.6rem, 3.5vw, 3rem);
+  }
+
+  .bottom-right {
+    bottom: 4.5%;
+    right: 7.5%;
+    font-size: clamp(1.4rem, 3vw, 2.5rem);
+  }
+
+  /* ===== Link styling ===== */
+
+  a {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  .bottom-right a {
+    display: inline-block;
+    padding: 0.4em 0.7em;
+    border: 2px solid yellow;
+    border-radius: 4px;
+  }
+
+  .bottom-right a:hover {
+    background: yellow;
+    color: black;
+  }
+
+  /* ===== Tablet adjustments ===== */
+
+  @media (max-width: 768px) {
+    .top-left {
+      top: 6%;
+      left: 5%;
+    }
+
+    .center-left {
+      top: 50%;
+      left: 5%;
+    }
+
+    .bottom-left {
+      left: 5%;
+    }
+
+    .bottom-right {
+      right: 5%;
+    }
+  }
+
+  /* ===== Phones ===== */
+
+  @media (max-width: 480px) {
+    .hero {
+      padding: 1rem 0;
+    }
+
+    .overlay-text {
+      position: relative;
+      margin: 0.75rem 1rem;
+      max-width: 90%;
+      text-align: center;
+    }
+
+    .bottom-right {
+      margin-top: 1rem;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+  <div class="overlay-text top-left">
+    FERD LEIMKUHLER MEMORIAL CELEBRATION
+    <span class="smaller-text">
+      <br>Friday, June 12, 2026
+      <br>Noon–2pm
+    </span>
+  </div>
+
+  <div class="overlay-text center-left">
+    Food &amp; Drink
+  </div>
+
+  <div class="overlay-text bottom-left">
+    The Brazilian Room
+    <br>Tilden Park, Berkeley
+  </div>
+
+  <div class="overlay-text bottom-right">
+    <a href="info.html">All the details</a>
+  </div>
+
+</div>
+
+</body>
+</html>
