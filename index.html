@@ -115,22 +115,24 @@
 
   /* ===== Phones ===== */
 
-  @media (max-width: 480px) {
-    .hero {
-      padding: 1rem 0;
+    @media (max-width: 480px) {
+      .hero {
+        padding: 1rem 0;
+      }
+
+      .overlay-text {
+        position: relative;
+        margin: 0.75rem auto; /* auto centers the block */
+        max-width: 90%;
+        text-align: center;
+      }
+
+      .bottom-right {
+        right: auto;          /* cancel desktop positioning */
+        left: auto;
+      }
     }
 
-    .overlay-text {
-      position: relative;
-      margin: 0.75rem 1rem;
-      max-width: 90%;
-      text-align: center;
-    }
-
-    .bottom-right {
-      margin-top: 1rem;
-    }
-  }
 </style>
 </head>
 
