@@ -113,8 +113,7 @@
     }
   }
 
-  /* ===== Phones ===== */
-
+    /* ===== Phones ===== */
     @media (max-width: 480px) {
       .hero {
         padding: 1rem 0;
@@ -129,24 +128,29 @@
         right: auto;
       }
 
+      /* Nudge top block UP */
       .top-left {
-        margin-top: -1rem; /* move up */
+        transform: translateY(-0.5rem);
       }
 
-      .bottom-left,
-      .bottom-right {
-        margin-top: 3rem; /* move down */
-      }
-
+      /* Hide “Food & Drink” on phones */
       .center-left {
         display: none;
       }
 
+      /* Nudge bottom blocks DOWN */
+      .bottom-left,
       .bottom-right {
-        right: auto;
+        transform: translateY(1.25rem);
+      }
+
+      /* Cancel desktop positioning */
+      .bottom-right {
         left: auto;
+        right: auto;
       }
     }
+
 
 </style>
 </head>
