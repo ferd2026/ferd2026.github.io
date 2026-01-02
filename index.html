@@ -117,40 +117,36 @@
     /* ===== Phones ===== */
     @media (max-width: 480px) {
       .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         padding: 1rem 0;
       }
 
       .overlay-text {
-        position: relative;
-        margin: 0.75rem auto;
+        position: static;
         max-width: 90%;
         text-align: center;
-        left: auto;
-        right: auto;
+        margin: 0 auto;
       }
 
-      /* Nudge top block UP */
       .top-left {
-        transform: translateY(-1.25rem);
+        margin-top: 0.5rem;
       }
 
-      /* Hide “Food & Drink” on phones */
       .center-left {
         display: none;
       }
 
-      /* Nudge bottom blocks DOWN */
-      .bottom-left,
-      .bottom-right {
-        transform: translateY(2rem);
-      }
-
-      /* Cancel desktop positioning */
-      .bottom-right {
-        left: auto;
-        right: auto;
+      .mobile-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
       }
     }
+
 
 
 </style>
@@ -173,6 +169,7 @@
     Food &amp; Drink
   </div>
 
+<div class="mobile-bottom">
   <div class="overlay-text bottom-left">
     The Brazilian Room
     <br>Tilden Park, Berkeley
@@ -181,6 +178,7 @@
   <div class="overlay-text bottom-right">
     <a href="info.html">All the details</a>
   </div>
+</div>
 
 </div>
 
