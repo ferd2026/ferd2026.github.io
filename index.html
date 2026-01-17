@@ -6,7 +6,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+  
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ferd Leimkuhler Memorial Celebration</title>
@@ -36,7 +36,7 @@
 
   .overlay-text {
     position: absolute;
-    color: yellow;
+    color: white;
     padding: 0.4em 0.6em;
     max-width: 80%;
   }
@@ -69,11 +69,31 @@
     right: 7.5%;
     font-size: clamp(1.4rem, 3vw, 2.5rem);
   }
+  
+  
+  
+  
+  .top-left .title {
+    margin-bottom: 0.75rem; /* ← space below heading */
+  }
+
+  .top-left .date {
+    font-size: clamp(1.2rem, 3vw, 2.5rem);
+    margin-bottom: 0.4rem; /* ← space between date and time */
+  }
+
+  .top-left .time {
+    font-size: clamp(1.2rem, 3vw, 2.5rem);
+  }
+
+  
+  
+  
 
   /* ===== Link styling ===== */
 
   a {
-    color: yellow;
+    color: white;
     text-decoration: none;
   }
 
@@ -84,12 +104,12 @@
   .bottom-right a {
     display: inline-block;
     padding: 0.4em 0.7em;
-    border: 2px solid yellow;
+    border: 2px solid white;
     border-radius: 4px;
   }
 
   .bottom-right a:hover {
-    background: yellow;
+    background: white;
     color: black;
   }
 
@@ -158,12 +178,19 @@
 <div class="hero">
 
   <div class="overlay-text top-left">
-    FERD LEIMKUHLER MEMORIAL CELEBRATION
-    <span class="smaller-text">
-      <br>Friday, June 12, 2026
-      <br>Noon–2pm
-    </span>
+    <div class="title">
+      Ferd Leimkuhler Memorial Celebration
+    </div>
+
+    <div class="date">
+      Friday, June 12, 2026
+    </div>
+
+    <div class="time">
+      Noon – 2
+    </div>
   </div>
+
 
  
   <div class="overlay-text center-left">

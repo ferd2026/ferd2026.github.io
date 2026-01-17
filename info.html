@@ -1,211 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="robots" content="noindex, nofollow">
-    <title>All The Details</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
 
-    <style>
-        /* Reset */
-        html, body {
-            margin: 0;
-            padding: 0;
-            background-color: white;
-            font-family: 'Fira Sans Condensed','Arial Rounded MT Bold',Arial, sans-serif;
-            font-size: 16px;
-            line-height: 1.5;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        /* Page container */
-        .page {
-            max-width: 900px;
-            padding: 1rem;
-            margin: 0 auto;
-        }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>All The Details</title>
 
-        h1 {
-            margin-top: 0;
-        }
+<style>
+/* ===== Base reset ===== */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: 'Fira Sans Condensed','Arial Rounded MT Bold',Arial,sans-serif;
+    font-size: 20px;
+    line-height: 1.55;
+    color: #000;
+}
 
-        h2 {
-            font-weight: 400;
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
+/* ===== Page container ===== */
+.page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: clamp(1rem, 4vw, 2rem);
+}
 
-        p {
-            margin-top: 0.25rem;
-            margin-bottom: 0.75rem;
-        }
+/* ===== Headings ===== */
+h1 {
+    margin: 0 0 1.25rem 0;
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    font-weight: 600;
+}
 
-        .notice {
-            background: #f5f5f5;
-            padding: 0.75rem 1rem;
-            /*border-left: 4px solid #888;*/
-        }
-        
-        .notice {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: clamp(1.15rem, 3vw, 1.4rem);
+    font-weight: 500;
+}
 
-        .notice-icon {
-            font-size: 2rem;
-            line-height: 1;
-        }
+/* ===== Text ===== */
+p {
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+}
 
-        .directions {
-            margin-top: 1rem;
-        }
+/* ===== Lists ===== */
+ul {
+    padding-left: 1.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    list-style-type: square;
+}
 
-        .directions .indent {
-            margin-left: 1rem;
-        }
+li {
+    margin-bottom: 0.5rem;
+}
 
-        .parking-map {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin-top: 1rem;
-        }
+/* ===== Links ===== */
+a {
+    color: #000;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
 
-        /* Mobile adjustments */
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 1.5rem;
-            }
+a:hover {
+    text-decoration: underline;
+}
 
-            h2 {
-                font-size: 1.1rem;
-            }
+/* ===== Notice block ===== */
+.notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background: #fafafa;
+    border-left: 4px solid #ccc;
+}
 
-            .directions .indent {
-                margin-left: 0.5rem;
-            }
-        }
-        
-        /* Remove Chrome document focus highlight */
-        html:focus,
-        html:focus-visible,
-        body:focus,
-        body:focus-visible {
-            outline: none;
-        }
+.notice-icon {
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
 
-        /* Remove Chrome tap/click highlight */
-        html, body {
-        -webkit-tap-highlight-color: transparent;
-        }
-        
-     /* Prevent selection on headings (removes blue flash there) */
-        h1, h2 {
-            user-select: none;
-            -webkit-user-select: none;
-        }
+/* ===== Directions ===== */
+.directions {
+    margin-top: 1.25rem;
+}
 
-        /* Allow normal selection everywhere else */
-        p, a, strong, div {
-            user-select: text;
-            -webkit-user-select: text;
-        }
-    </style>
+.directions .indent {
+    margin-left: 1rem;
+    line-height: 1.6;
+}
+
+/* ===== Images ===== */
+.parking-map {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1.5rem auto;
+    border-radius: 4px;
+}
+
+/* ===== Footer spacing ===== */
+.footer {
+    margin-bottom: 4rem;
+}
+
+/* ===== Mobile adjustments ===== */
+@media (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+
+    h2 {
+        margin-top: 1.75rem;
+    }
+
+    .directions .indent {
+        margin-left: 0.75rem;
+    }
+
+    a {
+        display: inline-block;
+        padding: 0.15rem 0;
+    }
+}
+
+/* ===== Remove Chrome focus / tap highlights ===== */
+html:focus,
+html:focus-visible,
+body:focus,
+body:focus-visible {
+    outline: none;
+}
+
+html, body {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Prevent selection flash on headings */
+h1, h2 {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+p, a, strong, div, li {
+    user-select: text;
+    -webkit-user-select: text;
+}
+</style>
 </head>
 
 <body>
-    <div class="page">
 
-        <h1>Ferd Leimkuhler Memorial Celebration</h1>
+<div class="page">
 
-        <h2>When</h2>
-        <p>Friday, June 12, 2026, Noon to 2pm.</p>
+<h1>Ferd Leimkuhler Memorial Celebration</h1>
 
-        <h2>Where</h2>
-        <p>The Brazilian Room in Tilden Park, on the eastern edge of Berkeley, California.</p>
+<h2>When</h2>
+<p>Friday, June 12, 2026, Noon to 2pm.</p>
 
-        <h2>Food &amp; Drink</h2>
-        <p>Refreshments will be served.</p>
+<h2>Where</h2>
+<p>The Brazilian Room in Tilden Park, on the eastern edge of Berkeley, California.</p>
 
-        <h2>RSVP</h2>
-        <p>Let us know who's coming by emailing Kristin at <a href="mailto:leimgal@gmail.com">leimgal@gmail.com</a>.</p>
+<h2>Food &amp; Drink</h2>
+<p>Refreshments will be served.</p>
 
-        <h2>Streaming</h2>
-        <p>We intend to stream the event live and make it available for later viewing. Check back here for details.</p>
-        
-        <h2>Participation</h2>
-        <p>There'll be an opportunity to speak, for anyone who wants to, at the event. If you can't attend in person and want to share something, send a video! Here are some guidelines:</p>
-        <ul style="list-style-type:square;">
-             <li>Record in horizontal format; If using a phone, turn it sideways </li>
-             <li>Make sure a light source is facing you and is not behind you</li>
-             <li>Record indoors in a quiet place</li>
-             <li>Begin your video by saying your name and how you knew Ferd</li>            
-             <li>Try to keep it under five minutes long</li>
-             <li>If your video file is under 25MB you can just attach it to an email; If your file is larger, upload it to a cloud service (e.g. Google Drive, Dropbox, iCloud) and share the link in an email</li> 
-             <li>Send your video to Kristin at <a href="mailto:leimgal@gmail.com">leimgal@gmail.com</a> by Sunday, May 31st</li>
-        </ul> 
-        
-        <p>You can also send something you've written for us to read for you! Send your written remembrance to Kristin at <a href="mailto:leimgal@gmail.com">leimgal@gmail.com</a>.</p>
-        
-        <h2>Driving Directions</h2>
-        <p>
-            The Brazilian Room is located in Tilden Regional Park
-            at the intersection of Wildcat Canyon and Shasta Roads.
-            <br>
-            <a target="_blank"
-               href="https://www.google.com/maps/place/Wildcat+Canyon+Rd+&+Shasta+Rd,+California+94708/@37.893007,-122.2453528,17z/data=!3m1!4b1!4m2!3m1!1s0x80857c0d76f52ce5:0x91526a48aaa23daa">
-                View on Google Maps
-            </a>
-        </p>
-        
-        <div class="notice">
-            <span class="notice-icon">&#9758;</span>
-            <span class="notice-text">
-                Note! There is little or no cellular reception at the Brazilian Room, so plan ahead!
-            </span>
-        </div>
-        
-        <div class="directions">
-            <p><strong>From Highway 80:</strong></p>
-            <div class="indent">
-                Take University Avenue exit in Berkeley<br>
-                Follow University until it ends at Oxford St.<br>
-                Left on Oxford to Rose St.<br>
-                Right on Rose one block to Spruce St.<br>
-                Left on Spruce and go about 1.5 miles to the stop sign at Grizzly Peak Blvd.<br>
-                Continue straight across Grizzly Peak Blvd. and Spruce becomes Wildcat Canyon Road<br>
-                Continue for two miles and the Brazilian Room will be on your left
-            </div>
-        </div>
+<h2>RSVP</h2>
+<p>
+    Let us know who's coming by emailing Kristin at
+    <a href="mailto:leimgal@gmail.com">leimgal@gmail.com</a>.
+</p>
 
-        <div class="directions">
-            <p><strong>From Highway 24 heading west:</strong></p>
-            <div class="indent">
-                Before Caldecott Tunnel, exit Fish Ranch Road and follow it up to the stop sign at Grizzly Peak Boulevard<br>
-                Turn right on Grizzly Peak and go around 2.5 miles to the stop sign at Golf Course Road<br>
-                Right on Golf Course Rd. and continue to the stop sign at Shasta Road<br>
-                Right on Shasta<br>
-                Shasta Road ends at Wildcat Canyon Rd. and the Brazilian Room parking lot
-            </div>
-        </div>
+<h2>Streaming</h2>
+<p>
+    We intend to stream the event live and make it available for later viewing.
+    Check back here for details.
+</p>
 
-        <h2>Parking</h2>
-        <p>
-            There is a parking area directly in front of the Brazilian Room.<br>
-            You can also park along Wildcat Canyon Rd.<br>
-            Parking is also allowed on the shoulder of Anza View Rd.
-        </p>
+<h2>Participation</h2>
+<p>
+    There'll be an opportunity to speak, for anyone who wants to, at the event.
+    If you can't attend in person and want to share something, send a video!
+    Here are some guidelines:
+</p>
 
-        <img class="parking-map"
-             src="images/brazilian_room_parking.jpg"
-             alt="Brazilian Room parking map">
- 
-        <h2>Questions</h2>
-        <p style="margin-bottom:4rem;">
-            If you have questions, email Kristin 
-            (<a href="mailto:leimgal@gmail.com">leimgal@gmail.com</a>) or phone her at (510) 847-0631‬.
-            <br><br><a href="index.html">&laquo; Back</a>
+<ul>
+    <li>Record in horizontal format; if using a phone, turn it sideways</li>
+    <li>Make sure a light source is facing you and is not behind you</li>
+    <li>Record indoors in a quiet place</li>
+    <li>Begin your video by saying your name and how you knew Ferd</li>
+    <li>Try to keep it under five minutes long</li>
+    <li>If your video file is under 25MB, attach it to an email; otherwise upload it to a cloud service and share the link</li>
+    <li>Send your video by Sunday, May 31st</li>
+</ul>
 
+<p>
+    You can also send something you've written for us to read for you.
+    Email written remembrances to
+    <a href="mailto:leimgal@gmail.com">leimgal@gmail.com</a>.
+</p>
+
+<h2>Driving Directions</h2>
+<p>
+    The Brazilian Room is located in Tilden Regional Park at the intersection of
+    Wildcat Canyon and Shasta Roads.
+    <br>
+    <a target="_blank"
+       href="https://www.google.com/maps/place/Wildcat+Canyon+Rd+&+Shasta+Rd,+California+94708">
+        View on Google Maps
+    </a>
+</p>
+
+<div class="notice">
+    <span class="notice-icon">&#9758;</span>
+    <span>
+        Note! There is little or no cellular reception at the Brazilian Room, so plan ahead!
+    </span>
+</div>
+
+<div class="directions">
+    <p><strong>From Highway 80:</strong></p>
+    <div class="indent">
+        Take University Avenue exit in Berkeley<br>
+        Follow University until it ends at Oxford St.<br>
+        Left on Oxford to Rose St.<br>
+        Right on Rose one block to Spruce St.<br>
+        Left on Spruce and go about 1.5 miles to the stop sign at Grizzly Peak Blvd.<br>
+        Continue straight across Grizzly Peak Blvd. and Spruce becomes Wildcat Canyon Road<br>
+        Continue for two miles and the Brazilian Room will be on your left
     </div>
+</div>
+
+<div class="directions">
+    <p><strong>From Highway 24 heading west:</strong></p>
+    <div class="indent">
+        Before Caldecott Tunnel, exit Fish Ranch Road<br>
+        Follow it to the stop sign at Grizzly Peak Boulevard<br>
+        Turn right and go about 2.5 miles to Golf Course Road<br>
+        Right on Golf Course Rd. to Shasta Road<br>
+        Right on Shasta; it ends at Wildcat Canyon Rd.<br>
+        The Brazilian Room parking lot is directly ahead
+    </div>
+</div>
+
+<h2>Parking</h2>
+<p>
+    There is a parking area directly in front of the Brazilian Room.<br>
+    You can also park along Wildcat Canyon Rd.<br>
+    Parking is allowed on the shoulder of Anza View Rd.
+</p>
+
+<img
+    class="parking-map"
+    src="images/brazilian_room_parking.jpg"
+    alt="Brazilian Room parking map">
+
+<h2>Questions</h2>
+<p class="footer">
+    If you have questions, email Kristin
+    (<a href="mailto:leimgal@gmail.com">leimgal@gmail.com</a>)
+    or phone her at (510) 847-0631.
+    <br><br>
+    <a href="index.html">&laquo; Back</a>
+</p>
+
+</div>
+
 </body>
 </html>
